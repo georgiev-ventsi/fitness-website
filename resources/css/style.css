@@ -1,0 +1,110 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+    background-color: #40a798;
+    opacity: 0.95;
+    z-index: 30px;
+    width: 100%;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+#heaader-logo{
+    height: 100%;
+    width: 15%;
+    background-image: url("/resources/images/logo/linkedin_banner_image_1.png");
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: 5%; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+nav{
+    display: flex;
+    margin-right: 5%;
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+ul li{
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+/* mobile */
+@media only screen and (max-width: 480px){
+    header{
+        height: 50px;
+    }
+
+    #heaader-logo{
+        display: none;
+    }
+
+    nav li:nth-child(1) {
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav li{
+        margin: 0px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-left: 2%;
+
+    }
+
+    ul li{
+        margin-right: 10px;
+        font-weight: normal;
+        font-size: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        padding: 2px;
+    }    
+
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+#welcome-message{
+    position: relative;
+    top: 100px;
+}
